@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+.card.ant-card .ant-card-body {
+  padding: 6px !important;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.homeBanner {
+  background: url('/public/images/bend.png') no-repeat bottom center #eef1fd;
+  background-size: 100%;
+  width: 100%;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.container {
+  max-width: 1350px !important;
+  margin: 0;
+  padding: 0 15px;
+}
+.steps {
+  padding: 0px 80px 80px !important;
+}
+@media only screen and (max-width: 850px) {
+  .invivox-button {
+    display: none;
+  }
+  .custom-search-in-nav{
+  display: none;
+  }
+  .custom-search-under-nav{
+    display: block;
+  }
+}
+@media only screen and (min-width: 849px) {
+   
+  .custom-search-in-nav{
+  display: block;
+  }
+  .custom-search-under-nav{
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hideInSmall {
+    display: none;
+  }
+  .nav-logo{
+    width:120px;
+  }
+  .nav-bar-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .online-transfer-block{
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .mobile-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .title {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .title {
+    font-size: 42px;
+  }
+  .footer-padding-info{
+    padding-top: 20px;
+  }
+  .event-cards-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .events-tabs-padding{
+    
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .main-event-tab-padding{
+    
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-card-border{
+    border-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner {
+    padding-top: 60px;
+  }
+  .work {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .event-heading{
+    font-size: 20px;
+  }
+  .event-address-parent{
+    margin-bottom: 0px;
+    
+  }
+  .event-address{
+    float: left !important;
+  }
+  .create-an-event{
+  float: none !important;
+  margin-bottom: 20px;
+  }
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none !important;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: 0px;
+}
+
+.custom-next {
+  right: 0px;
+}
+
+.main-tabs .dashboard-custom-tab .ant-tabs-ink-bar { 
+  background: #f65713 !important; 
+}
+.main-tabs .dashboard-custom-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: #f65713 !important;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 5px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+  border: none; 
+  font-weight: bold;
+  font-family: Nunito Sans,sans-serif;
+   
+
+}
+.main-tabs .dashboard-custom-tab .ant-tabs-tab  .ant-tabs-tab-btn{
+  color: #ffffff !important; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  border: none;
+  padding: 12px 12px 7px;
+  font-family: Nunito Sans,sans-serif;
+
+}
+
+.main-tabs .dashboard-custom-tab .ant-tabs-nav::before{
+  content: none !important;
+}
+
+.main-tabs .nunito-font{
+  font-family: Nunito Sans,sans-serif !important;
+}
+
+.main-tabs .button-color{
+  background-color: #1C3ED9 !important;
+}
+
+.event-active-tab{
+  background-color: #1C3ED9;
+  color: #eef1fd;
+}
+
+
+.imageCreate {
+  position: relative;
+}
+
+.imageCreate::before {
+  content: '';
+  display: block;
+  padding-top: calc(100% / (20 / 9));
+}
+
+.view-all-courses-section-background-image{
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block; 
+  width: 100%;
+  height: 300px;
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+.view-all-courses-section-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:1%;
+  z-index: 9999;
+  padding: 10%;
+  width: fit-content;
+}
+
+
+
+.ant-upload-list-item {
+  border-color: lightgrey !important;
+}
+
+.image-gallery-image{
+  height: 60vh;
+}
