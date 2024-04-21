@@ -1,7 +1,0 @@
-{
-
-    "env":{
-        "password":"shahmir143",
-        "JWT_KEY": "secret"
-    }
-}
