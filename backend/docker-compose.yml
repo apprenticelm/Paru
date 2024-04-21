@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  app:
+    ports:
+      - "${PORT}:5000"
+    container_name: twin-backend-v3
+    image: twin-backend4.0:4 #3 add material n coupon have bugs #2 old before add material and coupon
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - JWT_KEY=${JWT_KEY}
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/twin-db-v3
+      - JWT_KEY
+    depends_on:
+      - db
+
+  db:
+    image: postgres:12.2-alpine
+    container_name: twin-db-v3
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=twin-db-v3
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+      #db_data:/home/hpupm/Desktop/WEBSITE/TWIN-2-WEBSITE/TWIN V4.0 ADMIN DASHBOARD/V4.0.3-230912/DATABASE/POSTGRESS 
+
+volumes:
+  db_data:
