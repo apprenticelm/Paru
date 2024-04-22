@@ -6,6 +6,7 @@ import AdminEventCard from './AdminEventCard';
 
 function AdminEvents() {
   const { user } = useAuth();
+  System.out.print("Test");
 
   const { data } = useQuery('getAllAdminEvents', () =>
     getAllAdminEvents({ token: user?.token }),
