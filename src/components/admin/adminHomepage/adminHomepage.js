@@ -9,6 +9,7 @@ import {
   uploadHomeImage,
 } from '../../../services/uploadFile';
 const { Dragger } = Upload;
+System.out.print("test");
 
 function AdminHomepage() {
   const { user } = useAuth();
